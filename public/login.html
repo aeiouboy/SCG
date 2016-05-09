@@ -18,13 +18,15 @@
 
 <body>
   <!--[if lt IE 10]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
-  <!--Navbar -->
+
+  <!-- 1. Navbar -->
   <section class="wrapper-header">
+    <!-- Header -->
     <nav class="navbar navbar-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <a class="navbar-brand" href="#">
-          <img src="../images/scglogistics-logo.png" alt="SCG" class="img-responsive">
+          <img src="../images/scglogistics-logo.png" alt="SCG"  class="img-responsive">
         </a>
         <a class="navbar-right navbar-brand_right" href="#">
           <img src="../images/scg-logo.jpg" alt="SCG logistices" class="img-responsive"></a>
@@ -41,29 +43,25 @@
       </div>
       <!-- /.container-->
     </nav>
-    <!-- Navbar Mobile -->
+    <!-- 1.1 Navbar2 -->
     <nav class="navbar navbar-mobile visible-xs">
-      <div class="container no-gutter">
+      <div class="container-fluid">
         <div class="navbar-lower">
-          <div class="col-xs-5 btn-our_service">
-            <button type="button" class="navbar-toggle collapsed pull-left btn-service" data-toggle="collapse" data-target="#service" aria-expanded="false" aria-controls="navbar">
-              <span>OUR SERVICES<span class="caret"></span></span>
-            </button>
-          </div>
-          <div class="col-xs-7 btn-menu">
-            <button type="button" class="navbar-toggle collapsed btn-menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <!-- <span><a href="">CHOKECHAI</a></span> -->
-              <span class="icon-bar top-bar"></span>
-              <span class="icon-bar middle-bar"></span>
-              <span class="icon-bar bottom-bar"></span>
-            </button>
-          </div>
+          <button type="button" class="navbar-toggle collapsed pull-left btn-service" data-toggle="collapse" data-target="#service" aria-expanded="false" aria-controls="navbar">
+            <span>OUR SERVICES<span class="caret"></span></span>
+          </button>
+          <button type="button" class="navbar-toggle collapsed btn-menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <!-- <span><a href="">CHOKECHAI</a></span> -->
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
         </div>
 
         <div class="row">
           <div class="col-xs-12">
             <div id="service" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav-default">
+              <ul class="nav navbar-nav navbar-nav_mobile">
                 <li>
                   <a href="#">Domestics Transportation</a>
                 </li>
@@ -87,7 +85,7 @@
           </div>
           <div class="col-xs-12">
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav-default">
+              <ul class="nav navbar-nav navbar-nav-default">
                 <li>
                   <a href="index.html" class="active">Home<span class="sr-only">(current)</span></a></a>
                 </li>
@@ -111,7 +109,7 @@
                 </li>
               </ul>
               <hr class="horizontal-line">
-              <ul class="nav navbar-nav-default">
+              <ul class="nav navbar-nav navbar-nav-default">
                 <li>
                   <a href="">Sign in</a>
                 </li>
@@ -122,10 +120,14 @@
             </div>
           </div>
         </div>
+
         <!--/.nav-collapse -->
       </div>
-      <!--/.container-->
+      <!--/.container-fluid -->
     </nav>
+
+
+
 
     <nav class="navbar navbar-lower hidden-xs">
       <div class="container">
@@ -158,24 +160,25 @@
             </ul>
             <ul class="list-btn_member list-unstyled list-inline pull-right">
               <li>
-                <a href="" class="btn btn-default btn-navbar">Sign in</a>
+                <a href="" class="btn btn-default">Sign in</a>
               </li>
               <li>
-                <a href="" class="btn btn-default btn-navbar">Register</a>
+                <a href="" class="btn btn-default">Register</a>
               </li>
             </ul>
           </div>
         </div>
         <!--/.nav-collapse -->
       </div>
-      <!--/.container-->
+      <!--/.container-fluid -->
     </nav>
     <!-- Nav Mobile -->
   </section>
-  <!--SCG Top-->
-  <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="../images/1060.jpg" data-z-index="9999" data-bleed="200"> -->
+  <!-- 2. SCG Top-->
   <section class="scg-top">
+    <!-- scg-our_service -->
     <div id="carousel-text" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
           <img alt="Third slide" src="../images/bg-top.png">
@@ -187,7 +190,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="../images/bg-top.png">
+          <img data-src="/images/bg-top.png" alt="Third slide" src="../images/bg-top.png" class="img-responsive">
           <div class="container">
             <div class="carousel-caption">
               <h1>SCG LOGISTICS</h1>
@@ -196,7 +199,7 @@
           </div>
         </div>
         <div class="item">
-          <img alt="Third slide" src="../images/bg-top.png">
+          <img data-src="/images/bg-top.png" alt="Third slide" src="../images/bg-top.png">
           <div class="container">
             <div class="carousel-caption">
               <h1>SCG LOGISTICS</h1>
@@ -206,7 +209,7 @@
         </div>
       </div>
       <!-- Carousel Control -->
-      <a class="right carousel-control prev hidden-xs" href="#carousel-text" role="button" data-slide="prev">
+      <a class="left carousel-control prev hidden-xs" href="#carousel-text" role="button" data-slide="prev">
         <img src="../images/btn-left.png" alt="">
       </a>
       <a class="right carousel-control next hidden-xs" href="#carousel-text" role="button" data-slide="next">
@@ -214,7 +217,7 @@
       </a>
     </div>
   </section>
-  <!--SCG Our Service-->
+  <!-- 3. SCG Our Service-->
   <section class="scg-our_service">
     <div class="container">
       <div class="row">
@@ -263,16 +266,16 @@
           </div>
         </div>
       </div>
-      <hr class="our-serivce_line hidden-xs">
+      <hr class="horizontal-line">
     </div>
   </section>
-  <!--SCG Marketing-->
+  <!-- 4. SCG Marketing-->
   <section class="scg-marketing">
     <div class="marketing-spot">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="wrapper-marketing">
+            <div class="wrapper">
               <img src="./images/scg-marketing1.jpg" alt="marketing" class="img-responsive">
               <div class="caption">
                 <h4 class="titile-post">Lorem ispus</h4>
@@ -281,7 +284,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="wrapper-marketing">
+            <div class="wrapper">
               <img src="./images/scg-marketing2.jpg" alt="marketing" class="img-responsive">
               <div class="caption">
                 <h4 class="titile-post">Lorem ispus</h4>
@@ -290,7 +293,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="wrapper-marketing">
+            <div class="wrapper">
               <img src="./images/scg-marketing3.jpg" alt="marketing" class="img-responsive">
               <div class="caption">
                 <h4 class="titile-post">Lorem ispus</h4>
@@ -302,9 +305,10 @@
       </div>
     </div>
   </section>
-  <!--SCG Blogs-->
+  <!--5. Scg Blogs-->
   <section class="scg-blogs">
     <div class="container">
+      <!-- Blogs Row1  -->
       <div class="row">
         <div class="col-xs-12 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2">
           <div class="scg-blog_topic">
@@ -313,6 +317,7 @@
           </div>
         </div>
       </div>
+      <!-- Blogs Row2  -->
       <div class="row">
         <div class="col-xs-12 col-md-8 col-lg-8">
           <div class="blog-thumbnail">
@@ -324,11 +329,11 @@
               <h4 class="titile-post">By-Water Logistics: The Secret</h4>
             </div>
             <hr>
-            <ul class="blog-icon_group list-unstyled list-inline">
-              <li><span class="icon-view">368</span></li>
-              <li><span class="icon-reply">45</span></li>
-              <li><span class="icon-like">12</span></li>
-              <li><span class="icon-share">27</span></li>
+            <ul class="blog-icongroup list-unstyled list-inline">
+              <li class="icon-view">368</li>
+              <li class="icon-reply">45</li>
+              <li class="icon-like">12</li>
+              <li class="icon-share">27</li>
             </ul>
           </div>
         </div>
@@ -342,11 +347,11 @@
               <h4 class="titile-post">By-Water Logistics: The Secret</h4>
             </div>
             <hr>
-            <ul class="blog-icon_group list-unstyled list-inline">
-              <li><span class="icon-view">368</span></li>
-              <li><span class="icon-reply">45</span></li>
-              <li><span class="icon-like">12</span></li>
-              <li><span class="icon-share">27</span></li>
+            <ul class="blog-icongroup list-unstyled list-inline">
+              <li class="icon-view">368</li>
+              <li class="icon-reply">45</li>
+              <li class="icon-like">12</li>
+              <li class="icon-share">27</li>
             </ul>
           </div>
         </div>
@@ -360,11 +365,11 @@
               <h4 class="titile-post">By-Water Logistics: The Secret</h4>
             </div>
             <hr>
-            <ul class="blog-icon_group list-unstyled list-inline">
-              <li><span class="icon-view">368</span></li>
-              <li><span class="icon-reply">45</span></li>
-              <li><span class="icon-like">12</span></li>
-              <li><span class="icon-share">27</span></li>
+            <ul class="blog-icongroup list-unstyled list-inline">
+              <li class="icon-view">368</li>
+              <li class="icon-reply">45</li>
+              <li class="icon-like">12</li>
+              <li class="icon-share">27</li>
             </ul>
           </div>
         </div>
@@ -378,16 +383,16 @@
               <h4 class="titile-post">By-Water Logistics: The Secret</h4>
             </div>
             <hr>
-            <ul class="blog-icon_group list-unstyled list-inline">
-              <li><span class="icon-view">368</span></li>
-              <li><span class="icon-reply">45</span></li>
-              <li><span class="icon-like">12</span></li>
-              <li><span class="icon-share">27</span></li>
+            <ul class="blog-icongroup list-unstyled list-inline">
+              <li class="icon-view">368</li>
+              <li class="icon-reply">45</li>
+              <li class="icon-like">12</li>
+              <li class="icon-share">27</li>
             </ul>
           </div>
         </div>
         <div class="col-xs-12 col-md-4 col-lg-4">
-          <div class="btn-view_all view-move">
+          <div class="btn-view_all">
             <a href="#">
               <h4>View All</h4>
             </a>
@@ -396,16 +401,15 @@
       </div>
     </div>
   </section>
-  <!--SCG News Activities-->
+  <!--6. Scg News Activities-->
   <section class="scg-news_activities">
     <div class="container">
       <div class="row">
         <div class="col-xs-6 col-md-4 col-lg-4">
           <div class="scg-news_activities">
-            <h2 class="title-news_activities">NEWS
-              <br>&
-              <br>ACTIVITIES
-            </h2>
+            <h2>NEWS</h2>
+            <h2>&</h2>
+            <h2>ACTIVITIES</h2>
             <p>Aliquam vehicula erat at convallis dictum. Curabitur tristique non risus non scelerisque.</p>
           </div>
         </div>
@@ -416,29 +420,33 @@
               <img src="./images/scg-blogs5.jpg" alt="article" class="img-responsive">
             </a>
             <div class="caption">
-              <ul class="blog-icon_group list-unstyled list-inline">
-                <li><small>October 16, 2015</small></li>
-                <li><span class="icon-view"><small>368</small></span></li>
-                <li>
-                  <h4 class="title-post">By-Water Logistics: The Secret</h4></li>
-              </ul>
+              <div class="blog-date_view">
+                <ul class="list-unstyled list-inline">
+                  <li><small>October 16, 2015</small></li>
+                  <li><span class="icon-view"><small>368</small></span></li>
+                  <li>
+                    <h4 class="title-post">By-Water Logistics: The Secret</h4></li>
+                </ul>
+              </div>
             </div>
             <hr>
           </div>
         </div>
-        <div class="clearfix visible-xs-block"></div>
+
         <div class="col-xs-6 col-md-4 col-lg-4">
           <div class="blog-thumbnail">
             <a href="#">
               <img src="./images/scg-blogs6.jpg" alt="article" class="img-responsive">
             </a>
             <div class="caption">
-              <ul class="blog-icon_group list-unstyled list-inline">
-                <li><small>October 16, 2015</small></li>
-                <li><span class="icon-view"><small>368</small></span></li>
-                <li>
-                  <h4 class="title-post">By-Water Logistics: The Secret</h4></li>
-              </ul>
+              <div class="blog-date_view">
+                <ul class="list-unstyled list-inline">
+                  <li><small>October 16, 2015</small></li>
+                  <li><span class="icon-view"><small>368</small></span></li>
+                  <li>
+                    <h4 class="title-post">By-Water Logistics: The Secret</h4></li>
+                </ul>
+              </div>
             </div>
             <hr>
           </div>
@@ -450,12 +458,14 @@
               <img src="./images/scg-blogs7.jpg" alt="article" class="img-responsive">
             </a>
             <div class="caption">
-              <ul class="blog-icon_group list-unstyled list-inline">
-                <li><small>October 16, 2015</small></li>
-                <li><span class="icon-view"><small>368</small></span></li>
-                <li>
-                  <h4 class="title-post">By-Water Logistics: The Secret</h4></li>
-              </ul>
+              <div class="blog-date_view">
+                <ul class="list-unstyled list-inline">
+                  <li><small>October 16, 2015</small></li>
+                  <li><span class="icon-view"><small>368</small></span></li>
+                  <li>
+                    <h4 class="title-post">By-Water Logistics: The Secret</h4></li>
+                </ul>
+              </div>
             </div>
             <hr>
           </div>
@@ -471,40 +481,35 @@
       </div>
     </div>
   </section>
-  </div>
-  <!--Link Social-->
+  <!--7. Link Social-->
   <section class="link-social">
     <div class="container">
       <div class="row">
         <div class="icon-link_social pull-left">
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/facebook.png" alt="facebook" class="img-responsive"></a>
+            <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
           </div>
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/youtube.png" alt="youtube" class="img-responsive"></a>
+            <a href="#"><img src="./images/youtube.png" alt="youtube"></a>
           </div>
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/google.png" alt="google" class="img-responsive"></a>
+            <a href="#"><img src="./images/google.png" alt="google"></a>
           </div>
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/twitter.png" alt="twitter" class="img-responsive"></a>
-            <div class="bottom-logo hidden-xs">
-              <img src="./images/scg-cycle.png" alt="">
-            </div>
+            <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
           </div>
         </div>
       </div>
     </div>
     </div>
   </section>
-  <!--Footer-->
+  <!--8. Footer-->
   <section class="footer">
     <div class="container">
       <div class="row hidden-xs">
-        <div class="col-xs-3 col-md-3 col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <ul class="list-unstyled">
-            <li>
-              <h4>CONTACT US</h4></li>
+            <li><h4>CONTACT US</h4></li>
             <li>1 Siam Cement Rd.</li>
             <li>Bangsue Bangkok 10800</li>
             <li class="icon-location">
@@ -516,30 +521,27 @@
           </ul>
         </div>
 
-        <div class="col-xs-3 col-md-3 col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <ul class="list-unstyled">
-            <li>
-              <h4>SERVICES</h4></li>
+            <li><h4>SERVICES</h4></li>
             <li><a href="">Our services</a></li>
             <li><a href="">IT System</a></li>
             <li><a href="">RDC/CDC</a></li>
           </ul>
         </div>
 
-        <div class="col-xs-3 col-md-3 col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <ul class="list-unstyled">
-            <li>
-              <h4>USEFUL LINKS</h4></li>
+            <li><h4>USEFUL LINKS</h4></li>
             <li><a href="">News & Activities</a></li>
             <li><a href="">Logistic Blog</a></li>
             <li><a href=""><span style="font-weight: 700">Related Link</span></a></li>
           </ul>
         </div>
 
-        <div class="col-xs-3 col-md-3 col-lg-3">
+        <div class="col-md-3">
           <ul class="list-unstyled">
-            <li>
-              <h4>ABOUT OFFICE</h4></li>
+            <li><h4>ABOUT OFFICE</h4></li>
             <li><a href="">Vision</a></li>
             <li><a href="">Logo</a></li>
             <li><a href="">Goal Achievement</a></li>
@@ -551,44 +553,48 @@
         </div>
       </div>
       <!--8.1 Subscribe-->
-      <div class="col-xs-12 col-md-6 col-lg-6 form-subscribe">
-        <h5>Subscribe to our newsletter</h5>
-        <div class="input-group">
-          <input type="email" class="form-control" placeholder="Email">
-          <div class="input-group-btn">
-            <button type="button" class="btn btn-default btn-subscribe_submit">Subscribe</button>
-          </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12 form-subscribe">
+            <form class="form-inline">
+              <div class="form-group form-sub">
+                <h5>Subscribe to our newsletter</h5>
+                <label class="sr-only" for="">Subscribe to our newsletter</label>
+                <input type="email" class="form-control" id="" placeholder="Email">
+                <button type="submit" class="btn btn-default btn-subscribe">Subscribe</button>
+              </div>
+            </form>
         </div>
       </div>
     </div>
   </section>
-  <!--Banner Support-->
+  <!--9. Banner Support-->
   <section class="banner-support">
     <div class="banner-support_link">
       <div class="container">
         <div class="row">
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/banner-support1.png" alt="" class="img-responsive"></a>
+            <a href="#"><img src="./images/banner-support1.png" alt=""></a>
           </div>
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/banner-support2.png" alt="" class="img-responsive"></a>
+            <a href="#"><img src="./images/banner-support2.png" alt=""></a>
           </div>
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/banner-support3.png" alt="" class="img-responsive"></a>
+            <a href="#"><img src="./images/banner-support3.png" alt=""></a>
           </div>
           <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/banner-support4.png" alt="" class="img-responsive"></a>
+            <a href="#"><img src="./images/banner-support4.png" alt=""></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--END Footer-->
+  <!--10. END Footer-->
   <section class="end-footer">
     <div class="copyright text-center">
       <p>Copyright 2010 SCG Logistics Management Company Limited. All Rights Reserved</p>
     </div>
   </section>
+
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
@@ -612,18 +618,6 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
-  <script>
-    $('.navbar-mobile button span').click(function() {
-      $(this).children('.caret').toggleClass("rotate-180");
-      $(this).closest('.nav').find('button a').not(this).children('.caret').removeClass("rotate-180");
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/parallax.min.js"></script>
-
-  <script>
-  $('.parallax-window').parallax({imageSrc: '../images/bg-wrapper.png'});
-  </script>
 </body>
 
 </html>
