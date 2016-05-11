@@ -16,9 +16,21 @@
 
 </head>
 
-<body>
+  <!-- <div class="wrapper">
+    <div class="container">
+      <ul id="scene">
+        <li class="layer" data-depth="0.10"><img src="images/wrapper/wrapper2.png"></li>
+        <li class="layer" data-depth="0.20"><img src="images/wrapper/wrapper3.png"></li>
+        <li class="layer" data-depth="0.40"><img src="images/wrapper/wrapper1.png"></li>
+        <li class="layer" data-depth="0.60"><img src="images/wrapper/wrapper4.png"></li>
+        <li class="layer" data-depth="0.80"><img src="images/wrapper/wrapper5.png"></li>
+        <li class="layer" data-depth="0.80"><img src="images/wrapper/wrapper6.png"></li>
+      </ul>
+    </div>
+  </div> -->
   <!--[if lt IE 10]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
   <!--Navbar -->
+  <div class="parallax-window" data-parallax="scroll" data-image-src="../images/wrapper.png"></div>
   <section class="wrapper-header">
     <nav class="navbar navbar-top">
       <div class="container">
@@ -172,9 +184,8 @@
     </nav>
     <!-- Nav Mobile -->
   </section>
+
   <!--SCG Top-->
-  <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="../images/1060.jpg" data-z-index="9999" data-bleed="200"> -->
-  <!-- <div class="parallax-window" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="./images/1060.jpg" data-natural-width="1060" data-natural-height="602" style="height: 602px;"></div> -->
   <section class="scg-top">
     <div id="carousel-text" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -620,11 +631,17 @@
     });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/parallax.min.js"></script>
-
+  <script src="scripts/parallax2.min.js"></script>
   <script>
-  $('.parallax-window').parallax({imageSrc: '../images/1060.jpg'});
+  $('.parallax-window').parallax({imageSrc: '../images/wrapper.png'});
   </script>
+
+  <!-- <script src="scripts/parallax.js"></script>
+  <script>
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+  </script> -->
+
 </body>
 
 </html>
