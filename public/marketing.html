@@ -90,7 +90,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav-default">
                 <li>
-                  <a href="index.html" class="active">Home<span class="sr-only">(current)</span></a></a>
+                  <a href="index.html">Home<span class="sr-only">(current)</span></a></a>
                 </li>
                 <li>
                   <a href="company.html">Company</a>
@@ -135,7 +135,7 @@
           <div id="navbar">
             <ul class="nav navbar-nav navbar-nav_desktop">
               <li>
-                <a href="index.html" class="active">Home<span class="sr-only">(current)</span></a></a>
+                <a href="index.html">Home<span class="sr-only">(current)</span></a></a>
               </li>
               <li>
                 <a href="company.html">Company</a>
@@ -192,7 +192,7 @@
           <div class="caption">
             <div class="blur-marketing"></div>
             <div class="caption-text">
-              <a href="#" class="btn btn-default btn-register_martketing">Register</a>
+              <a href="#" class="btn btn-default btn-register_marketing" data-toggle="modal" data-target="#form-register">Register</a>
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@
           <div class="caption">
             <div class="blur-marketing"></div>
             <div class="caption-text">
-              <a href="#" class="btn btn-default btn-register_martketing">Register</a>
+              <a href="#" class="btn btn-default btn-register_marketing" data-toggle="modal" data-target="#form-register">Register</a>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@
           <div class="caption">
             <div class="blur-marketing"></div>
             <div class="caption-text">
-              <a href="#" class="btn btn-default btn-register_martketing">Register</a>
+              <a href="#" class="btn btn-default btn-register_marketing" data-toggle="modal" data-target="#form-register">Register</a>
             </div>
           </div>
         </div>
@@ -248,33 +248,80 @@
           </ul>
         </nav>
       </div>
-      </div>
+    </div>
   </section>
-  <!--Link Social-->
-  <section class="link-social">
-    <div class="container">
-      <div class="row">
-        <div class="icon-link_social pull-left">
-          <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/facebook.png" alt="facebook" class="img-responsive"></a>
-          </div>
-          <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/youtube.png" alt="youtube" class="img-responsive"></a>
-          </div>
-          <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/google.png" alt="google" class="img-responsive"></a>
-          </div>
-          <div class="col-xs-3 col-md-3 col-lg-3">
-            <a href="#"><img src="./images/twitter.png" alt="twitter" class="img-responsive"></a>
-            <div class="bottom-logo hidden-xs">
-              <img src="./images/scg-cycle.png" alt="">
+
+  <!-- Modal Register Form -->
+  <div class="modal fade" id="form-register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header modal-register">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true"><img src="../images/btn-close.png" style="width: 40px; height: 40px"></span>
+            <span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title" id="Modalform">Campaign Title-01</h4>
+          <p>Please enter your information detail to register</p>
+          <hr style="width: 80%;">
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form role="form">
+            <div class="col-sm-offset-2 col-sm-8">
+              <div class="form-group">
+                <label class="control-label" for="inputName">First Name</label>
+                <input type="text" class="form-control" id="inputEmail3" />
+              </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8">
+              <div class="form-group">
+                <label class="control-label" for="inputSurname">Surname</label>
+                <input type="text" class="form-control" id="inputSurname" />
+              </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8">
+              <div class="form-group">
+                <label class="control-label" for="inputCompany">Company</label>
+                <input type="text" class="form-control" id="inputCompany" />
+              </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8">
+              <div class="form-group">
+                <label class="control-label" for="inputPosition">Position</label>
+                <input type="text" class="form-control" id="inputPosition" />
+              </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8">
+              <div class="form-group">
+                <label class="control-label" for="inputContact">Contact Phone Number</label>
+                <input type="text" class="form-control" id="inputContact" />
+              </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8 form-group_captcha">
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label for="captcha">Captcha</label>
+                  <p>Type the characters</p>
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="captcha">
+                </div>
+              </div>
+            </div>
+          </form>
+      </div>
+          <!-- Modal Footer -->
+        <div class="modal-footer">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-default btn-register_submit">Submit</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
   <!--Footer-->
   <section class="footer">
     <div class="container">
