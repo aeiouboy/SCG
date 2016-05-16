@@ -52,7 +52,6 @@
           </div>
           <div class="col-xs-7 btn-menu">
             <button type="button" class="navbar-toggle collapsed btn-menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <!-- <span><a href="">CHOKECHAI</a></span> -->
               <span class="icon-bar top-bar"></span>
               <span class="icon-bar middle-bar"></span>
               <span class="icon-bar bottom-bar"></span>
@@ -380,18 +379,6 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
-
-  <script>
-    $('.navbar-mobile button span').click(function() {
-      $(this).children('.caret').toggleClass("rotate-180");
-      $(this).closest('.nav').find('button a').not(this).children('.caret').removeClass("rotate-180");
-    });
-
-    $(".navbar-nav_desktop li a").on("click", function() {
-      $("a").find(".active").removeClass("active");
-      $(this).parent().addClass("active");
-    });
-  </script>
 </body>
 
 </html>
