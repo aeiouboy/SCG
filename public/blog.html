@@ -111,7 +111,7 @@
                   <a href="contact.html">CONTACT US</a>
                 </li>
               </ul>
-              <hr class="horizontal-line">
+              <hr>>
               <ul class="nav navbar-nav-default">
                 <li>
                   <a href="">Sign in</a>
@@ -300,7 +300,7 @@
           </div>
         </div>
       </div>
-
+      <div class="clearfix"></div>
       <div class="scg-blog_post col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="blog-thumbnail">
           <a href="#">
@@ -329,7 +329,7 @@
                 <small>October 16, 2015</small>
                 <span class="icon-view"><small>368</small></span>
               <h3>SCG Logistics: The 2nd Safety We Care Event</h3>
-              <p>The titanic story of today, unescapably, is set sailed by the shipping company Hoegh Autoliners for taking delivery of the PCTC - Pure Car and Truck Carrier vessel named Hoegh Target (IMO 9684976), which sets the world</p>
+              <p>The titanic story of today, unescapably, is set sailed by the shipping company Hoegh Autoliners for taking delivery of the PCTC - Pure Car and Truck Carrier vessel named Hoegh Target (IMO 9684976), which sets the worldThe titanic story of today, unescapably, is set sailed by the shipping company Hoegh Autoliners for taking delivery of the PCTC - Pure Car and Truck Carrier vessel named Hoegh Target (IMO 9684976), which sets the world</p>
               <hr>
               <ul class="blog-icon_group list-unstyled list-inline">
                 <li><span class="icon-view">368</span></li>
@@ -361,7 +361,7 @@
           </div>
         </div>
       </div>
-
+      <div class="clearfix"></div>
       <div class="scg-blog_post col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="blog-thumbnail">
           <a href="#">
@@ -568,17 +568,18 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
+  <script src="scripts/lightbox.js" type="text/javascript"></script>
   <script>
-  $(function() {
-    $(".scg-blog_post").slice(0, 6).show();
-    $("#load").on('click', function(e) {
-      e.preventDefault();
-      $(".scg-blog_post:hidden").slice(0, 6).slideDown();
-      if ($(".scg-blog_post:hidden").length == 0) {
-        $(".loadmore").fadeOut('slow');
-      }
+    $(function() {
+      $(".scg-blog_post").slice(0, 6).show();
+      $("#load").on('click', function(e) {
+        e.preventDefault();
+        $(".scg-blog_post:hidden").slice(0, 3).slideDown();
+        if ($(".scg-blog_post:hidden").length == 0) {
+          $(".loadmore").fadeOut('slow');
+        }
+      });
     });
-  });
   </script>
 </body>
 

@@ -52,7 +52,6 @@
           </div>
           <div class="col-xs-7 btn-menu">
             <button type="button" class="navbar-toggle collapsed btn-menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <!-- <span><a href="">CHOKECHAI</a></span> -->
               <span class="icon-bar top-bar"></span>
               <span class="icon-bar middle-bar"></span>
               <span class="icon-bar bottom-bar"></span>
@@ -155,6 +154,8 @@
     </nav>
     <!-- Nav Mobile -->
   </section>
+
+  <div class="parallax-window1" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-login-page.png" data-natural-width="1300" data-natural-height="723" data-z-index="9999" data-position-y="170px" data-position="center">
   <!--Login Top-->
   <section class="login-bg">
     <div class="container">
@@ -228,8 +229,7 @@
       </div>
     </div>
   </section>
-
-
+</div>
 <!-- Forgot Password Modal -->
 <div class="modal fade" id="form-forgetpassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="col-sm-4 col-sm-offset-4 form-forgetpassword_bg">
@@ -257,7 +257,7 @@
     </form>
   </div>
 </div>
-
+<div>
 
   <!--Link Social-->
   <section class="link-social">
@@ -400,6 +400,9 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
+  <script src="scripts/parallax.js"></script>
+  <script>
+  $('.parallax-window1').parallax({imageSrc: '../images/wrapper/wrapper-login-page.png'});
+  </script>
 </body>
-
 </html>

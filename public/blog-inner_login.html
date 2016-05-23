@@ -125,7 +125,7 @@
                 <a href="contact.html">CONTACT US</a>
               </li>
             </ul>
-            <hr class="horizontal-line">
+            <hr>>
             <ul class="nav navbar-nav-default member-login">
               <li><a href="#">My Profile</a></li>
               <li><a href="#">Change Password</a></li>
@@ -190,7 +190,7 @@
 </nav>
 <!-- Nav Mobile -->
 </section>
-
+<div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/bg-section1.png" data-natural-width="1300" data-natural-height="1255" data-z-index="-9999" data-position-y="170px" data-position="top">
 <!-- blog -->
   <div class="container">
     <div class="row">
@@ -394,13 +394,50 @@ boost competitiveness for customers...</h4>
         <hr class="horizontal-line">
       </div>
       <div class="sidebar-module collapse" id="archives">
-        <ol class="list-unstyled">
-          <li><a href="#">May 2016</a></li>
-          <li><a href="#">April 2016</a></li>
-          <li><a href="#">March 2016</a></li>
-          <li><a href="#">February 2016</a></li>
-          <li><a href="#">January 2016</a></li>
-        </ol>
+        <ul class="archive_year list-unstyled">
+          <li class="years">
+            <a data-toggle="collapse" href="#archive_year_1">2016</a>
+            <ul class="archive_month collapse list-unstyled" id="archive_year_1">
+              <li class="posts">
+                <a href="#">January</a>
+              </li>
+              <li class="posts">
+                <a href="#">August</a>
+              </li>
+              <li class="posts">
+                <a href="#">September</a>
+              </li>
+            </ul>
+          </li>
+          <li class="years">
+            <a data-toggle="collapse" href="#archive_year_2">2015</a>
+            <ul class="archive_month collapse list-unstyled" id="archive_year_2">
+              <li class="posts">
+                <a href="#">January</a>
+              </li>
+              <li class="posts">
+                <a href="#">August</a>
+              </li>
+              <li class="posts">
+                <a href="#">September</a>
+              </li>
+            </ul>
+          </li>
+          <li class="years">
+            <a data-toggle="collapse" href="#archive_year_3">2014</a>
+            <ul class="archive_month collapse list-unstyled" id="archive_year_3">
+              <li class="posts">
+                <a href="#">January</a>
+              </li>
+              <li class="posts">
+                <a href="#">August</a>
+              </li>
+              <li class="posts">
+                <a href="#">September</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       <!-- /.blog-sidebar -->
     </div>
     </div>
@@ -558,7 +595,7 @@ boost competitiveness for customers...</h4>
       var lightbox = new Lightbox();
       lightbox.load();
     </script>
-    
+
     <script>
       var toggleBlock = function() {
         var windowsize = $(window).width(),
@@ -568,6 +605,10 @@ boost competitiveness for customers...</h4>
       $(document).ready(toggleBlock);
       $(window).on("resize.showContent", toggleBlock);
       toggleBlock();
+    </script>
+    <script src="scripts/parallax.js"></script>
+    <script>
+    $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-blog_detail-page.png'});
     </script>
   </body>
 
