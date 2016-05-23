@@ -9347,6 +9347,22 @@ a.right.carousel-control.prev {
   margin-top: 30px;
   font-family: SCGReg;
 }
+  .media {
+    overflow: hidden;
+  }
+  .media-left  {
+    width: 100px;
+    height: 100px;
+    margin: 0px 10px 0px 0px !important;
+    position: relative;
+  }
+    .media-object {
+      position: relative;
+      padding-right: 0px !important;
+      height: 100%;
+      width: 131px;
+      object-fit: cover;
+    }
 
 .side-bar .sidebar-module li > a {
   color: #a1a1a1;
