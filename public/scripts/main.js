@@ -11,7 +11,5 @@ $(document).ready(function () {
     $("a").find(".active").removeClass("active");
     $(this).parent().addClass("active");
   });
-  var lightbox = new Lightbox();
-  lightbox.load();
+
 });
-//# sourceMappingURL=main.js.map
