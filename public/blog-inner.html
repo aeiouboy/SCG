@@ -10,9 +10,15 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
+  <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/lightbox.css">
+  <!-- endbuild -->
 
 </head>
 
@@ -223,7 +229,9 @@
               Company, BSI Group and Hino Motors in conjunction with the Don’t Drive Drunk Foundation. The titles were, for instance, ‘Driver-centric Safety Management System’, ‘Delivery Plan’, ‘Smart Driver Community’, ‘ISO39001:2012 Road Traffic Safety
               Management’, ‘Road Safety CSR Project’ and ‘Green Logistics Management’, among others. The second was a keynote speech by the special guest speaker, M.L. Panadda Diskul Na Ayutthaya, Minister and Permanent Secretary to the Prime Minister’s
               Office, who did SCG a great honor of delivering a speech on the topic of “Road Safety: The Government’s Goal”.</p>
-            <iframe class="img-responsive" width="560" height="315" src="https://www.youtube.com/embed/xkLW7sWE3hE" frameborder="0" allowfullscreen></iframe>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/xkLW7sWE3hE" frameborder="0" allowfullscreen></iframe>
+              </div>
             <div class="row widget-bottom">
               <div class="col-xs-12 col-md-6">
                 <div class="sheet-download" style="margin-top: 0;">
@@ -603,6 +611,11 @@
         <div class="copyright text-center">
           <p>Copyright 2010 SCG Logistics Management Company Limited. All Rights Reserved</p>
         </div>
+        <span id="top-link-block" class="hidden">
+        <a href="#top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+            <img src="./images/btn-b2t.png" alt="Back to top">
+        </a>
+    </span><!-- /top-link-block -->
       </section>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -622,11 +635,30 @@
         ga('send', 'pageview');
       </script>
 
-      <script src="scripts/vendor.js"></script>
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="/bower_components/jquery/dist/jquery.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
 
-      <script src="scripts/plugins.js"></script>
+      <!-- build:js scripts/plugins.js -->
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+      <!-- endbuild -->
 
+      <!-- build:js scripts/main.js -->
       <script src="scripts/main.js"></script>
+      <!-- endbuild -->
       <script src="scripts/lightbox.js" type="text/javascript"></script>
       <script>
         var lightbox = new Lightbox();

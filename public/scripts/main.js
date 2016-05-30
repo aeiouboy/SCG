@@ -12,4 +12,15 @@ $(document).ready(function () {
     $(this).parent().addClass("active");
   });
 
+  $('.carousel').carousel({
+  interval: 5000
+});
+
+if ( ($(window).height() + 800) < $(document).height() ) {
+$('#top-link-block').removeClass('hidden').affix({
+    offset: {top:800}
+});
+}
+
+
 });
