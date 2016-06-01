@@ -173,6 +173,7 @@
     <!-- Nav Mobile -->
   </section>
   <!--Marketing Campaigns-->
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-marketing-page.png" data-natural-width="1300" data-z-index="-10" data-position-y="170px" data-position="top">
   <section class="marketing-campaigns">
     <div class="container">
       <div class="title-contact">
@@ -322,6 +323,31 @@
       </div>
     </div>
   </div>
+</div>
+  <!--Link Social-->
+  <section class="link-social">
+    <div class="container">
+      <div class="row">
+        <div class="icon-link_social pull-left">
+          <div class="col-xs-3 col-md-3 col-lg-3">
+            <a href="#"><img src="./images/facebook.png" alt="facebook" class="img-responsive"></a>
+          </div>
+          <div class="col-xs-3 col-md-3 col-lg-3">
+            <a href="#"><img src="./images/youtube.png" alt="youtube" class="img-responsive"></a>
+          </div>
+          <div class="col-xs-3 col-md-3 col-lg-3">
+            <a href="#"><img src="./images/google.png" alt="google" class="img-responsive"></a>
+          </div>
+          <div class="col-xs-3 col-md-3 col-lg-3">
+            <a href="#"><img src="./images/twitter.png" alt="twitter" class="img-responsive"></a>
+            <div class="bottom-logo hidden-xs">
+              <img src="./images/scg-cycle.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--Footer-->
   <section class="footer">
     <div class="container">
@@ -443,5 +469,8 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
+  <script>
+  $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-marketing-page.png'});
+  </script>
   </body>
   </html>

@@ -191,6 +191,7 @@
     <!-- Nav Mobile -->
   </section>
   <!--Marketing Campaigns-->
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-marketing-page.png" data-natural-width="1300" data-z-index="-9999" data-position-y="170px" data-position="top">
   <section class="marketing-campaigns">
     <div class="container">
       <div class="title-contact">
@@ -342,7 +343,7 @@
       </div>
     </div>
   </div>
-
+</div>
 
   <!--Link Social-->
   <section class="link-social">
@@ -490,7 +491,9 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
-
+  <script>
+  $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-marketing-page.png'});
+  </script>
 </body>
 
 </html>

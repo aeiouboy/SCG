@@ -175,6 +175,7 @@
     <!-- Nav Mobile -->
   </section>
   <!--New Event-->
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-new_detail-page.png" data-natural-width="1300" data-z-index="-9999" data-position-y="170px" data-position="top">
   <section class="news-event_top">
     <div class="container">
       <div class="title-news_event">
@@ -225,7 +226,7 @@
       </div>
     </div>
   </section>
-
+</div>
   <!--Link Social-->
   <section class="link-social">
     <div class="container">
@@ -376,6 +377,9 @@
     <script>
       var lightbox = new Lightbox();
       lightbox.load();
+    </script>
+    <script>
+    $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-new_detail-page.png'});
     </script>
 </body>
 

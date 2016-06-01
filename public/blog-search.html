@@ -175,6 +175,7 @@
     <!-- Nav Mobile -->
   </section>
   <!--Blog Top -->
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-blog_search-page.png" data-natural-width="1300" data-z-index="-9999" data-position-y="170px" data-position="top">
   <section class="blog-search_top">
     <div class="container">
       <div class="title-blog">
@@ -335,6 +336,7 @@
         </div>
       </div>
   </section>
+</div>
   <!--Link Social-->
   <section class="link-social">
     <div class="container">
@@ -481,7 +483,12 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
-
+  <script src="scripts/parallax.js"></script>
+  <script>
+    $('.parallax-bg').parallax({
+      imageSrc: '../images/wrapper/wrapper-blog_search-page.png'
+    });
+  </script>
 </body>
 
 </html>

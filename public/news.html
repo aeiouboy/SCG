@@ -172,6 +172,7 @@
     <!-- Nav Mobile -->
   </section>
   <!--SCG News-->
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-news-page.png" data-natural-width="1300" data-z-index="-9999" data-position-y="170px" data-position="top">
   <section class="scg-news">
     <div class="container">
       <div class="news-bg_top">
@@ -577,6 +578,7 @@
     </div>
     </div>
   </section>
+</div>
   <!--Link Social-->
   <section class="link-social">
     <div class="container">
@@ -736,7 +738,9 @@
       });
     });
   </script>
-
+  <script>
+  $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-news-page.png'});
+  </script>
 </body>
 
 </html>

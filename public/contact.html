@@ -171,6 +171,7 @@
     </nav>
     <!-- Nav Mobile -->
   </section>
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/bg-section1.png" data-natural-width="1300" data-z-index="-9999" data-position-y="170px" data-position="top">
   <!-- SCG Contact -->
   <section class="scg-contact">
     <div class="container">
@@ -303,6 +304,7 @@
       </div>
     </div>
   </section>
+</div>
   <!--7. Link Social-->
   <section class="link-social">
     <div class="container">
@@ -325,7 +327,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <!--Footer-->
@@ -485,6 +486,10 @@
     });
     $(":file").filestyle('buttonText', 'Upload file');
   </script>
+  <script>
+    $('.parallax-bg').parallax({
+      imageSrc: '../images/wrapper/wrapper-contact-page.png'
+    });
+  </script>
 </body>
-
 </html>
