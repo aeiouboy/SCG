@@ -162,7 +162,7 @@
         <div class="register-bg_top">
           <div class="title-register">
             <h1>Register</h1>
-            <p class="hidden-xs">
+            <p class="hidden-xs hidden-sm">
               Considers its value as products and services to offer to customers, Aliquam vehicula erat at convallis dictum.
             </p>
             <button type="submit" class="btn btn-default text-center btn-member_privilege" data-toggle="modal" data-target="#member-privilege">MEMBER PRIVILEGE</button>
@@ -172,12 +172,12 @@
     </section>
     <!-- Register Form -->
     <section class="register">
-      <div class="facebook_register col-sm-4 col-sm-offset-4 text-center">
+      <div class="facebook_register col-sm-6 col-sm-offset-3 text-center">
         <a href="#"><img src="/images/btn-facebook.jpg" alt="facebook" /></a>
         <h5 class="register-or">OR</h5>
       </div>
       <div class="form-register">
-        <div class="col-sm-4 col-sm-offset-4 form-register_bg">
+        <div class="col-sm-6 col-sm-offset-3 form-register_bg">
           <form action="/" method="/">
             <div class="row">
               <div class="form-group">
@@ -189,21 +189,22 @@
               <div class="control-group">
                 <label class="control-label" for="checkboxes">Title<span style="color: #ed1c24;">*</span></label>
                 <div class="form-inline">
-                  <label class="checkbox-inline">
+                  <label class="checkbox-inline no_indent">
                     <input type="checkbox" id="inlineCheckbox1" value="option1"> Mr.
                   </label>
-                  <label class="checkbox-inline">
+                  <label class="checkbox-inline no_indent">
                     <input type="checkbox" id="inlineCheckbox2" value="option2"> Mrs.
                   </label>
-                  <label class="checkbox-inline">
+                  <label class="checkbox-inline no_indent">
                     <input type="checkbox" id="inlineCheckbox3" value="option3"> Miss.
                   </label>
-                  <label class="checkbox-inline">
-                    <input type="checkbox">Other</label>
-                  <input type="email" class="form-control" style="width: 29%;">
-                </div>
+                  <label class="checkbox-inline no_indent">
+                    <input type="checkbox" id="inlineCheckbox4" value="option4"> Other
+                  </label>
+                    <input type="text" class="form-control inline" id="/">
               </div>
             </div>
+          </div>
             <div class="row">
               <div class="form-group">
                 <label for="/">First name<span style="color: #ed1c24;">*</span></label>
@@ -289,11 +290,13 @@
             </div>
             <div class="row">
               <div class="form-group">
-                <img src="./images/input-captcha.jpg" alt="captcha" class=img-responsive />
+                <div class="col-sm-8 col-sm-offset-2 text-center" style="padding: 15px;">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nihil velit adipisci at, porro autem, unde architecto, nisi facere atque rem accusantium quos dolorem omnis cumque. Omnis harum, voluptates quaerat!</p>
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-2 col-sm-offset-4 text-center">
+              <div class="col-sm-6 col-sm-offset-3 text-center">
                 <button type="submit" class="btn btn-default text-center btn-login">Register</button>
               </div>
             </div>
@@ -376,7 +379,7 @@
               <h4>USEFUL LINKS</h4></li>
             <li><a href="">News & Activities</a></li>
             <li><a href="">Logistic Blog</a></li>
-            <li><a href=""><span style="font-weight: 700">Related Link</span></a></li>
+            <li><a href="#"><strong>Related Link</strong></a></li>
           </ul>
         </div>
 
@@ -471,7 +474,6 @@
   <script src="scripts/isotope.pkgd.js"></script>
 
   <script src="scripts/lightbox.js"></script>
-  
   <script>
   $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-register-page.png'});
   </script>

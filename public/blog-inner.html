@@ -223,9 +223,9 @@
               Company, BSI Group and Hino Motors in conjunction with the Don’t Drive Drunk Foundation. The titles were, for instance, ‘Driver-centric Safety Management System’, ‘Delivery Plan’, ‘Smart Driver Community’, ‘ISO39001:2012 Road Traffic Safety
               Management’, ‘Road Safety CSR Project’ and ‘Green Logistics Management’, among others. The second was a keynote speech by the special guest speaker, M.L. Panadda Diskul Na Ayutthaya, Minister and Permanent Secretary to the Prime Minister’s
               Office, who did SCG a great honor of delivering a speech on the topic of “Road Safety: The Government’s Goal”.</p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/xkLW7sWE3hE" frameborder="0" allowfullscreen></iframe>
-              </div>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.youtube.com/embed/xkLW7sWE3hE" frameborder="0" allowfullscreen></iframe>
+            </div>
             <div class="row widget-bottom">
               <div class="col-xs-12 col-md-6">
                 <div class="sheet-download" style="margin-top: 0;">
@@ -534,11 +534,7 @@
           <li>
             <a href="">Logistic Blog</a>
           </li>
-          <li>
-            <a href="">
-              <span style="font-weight: 700">Related Link</span>
-                </a>
-                </li>
+          <li><a href="#"><strong>Related Link</strong></a></li>
                 </ul>
             </div>
             <div class="col-xs-3 col-md-3 col-lg-3">
@@ -609,60 +605,60 @@
         <a href="#top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
             <img src="./images/btn-b2t.png" alt="Back to top">
         </a>
-    </span><!-- /top-link-block -->
-      </section>
+    </span>
+                <!-- /top-link-block -->
+        </section>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-        (function(b, o, i, l, e, r) {
-          b.GoogleAnalyticsObject = l;
-          b[l] || (b[l] = function() {
-            (b[l].q = b[l].q || []).push(arguments)
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+          (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] = function() {
+              (b[l].q = b[l].q || []).push(arguments)
+            });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+          }(window, document, 'script', 'ga'));
+          ga('create', 'UA-XXXXX-X');
+          ga('send', 'pageview');
+        </script>
+
+        <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/plugins.js"></script>
+
+        <script src="scripts/main.js"></script>
+
+        <script src="scripts/bootstrap-filestyle.js"></script>
+
+        <script src="scripts/imagesloaded.pkgd.js"></script>
+
+        <script src="scripts/isotope.pkgd.js"></script>
+
+        <script src="scripts/lightbox.js"></script>
+        <script>
+          var lightbox = new Lightbox();
+          lightbox.load();
+        </script>
+
+        <script>
+          var toggleBlock = function() {
+            var windowsize = $(window).width(),
+              isDesktop = windowsize > 765;
+            $("#sidebar-menu, #last-post, #archives, #tag").toggleClass("collapse out", !isDesktop);
+          }
+          $(document).ready(toggleBlock);
+          $(window).on("resize.showContent", toggleBlock);
+          toggleBlock();
+        </script>
+        <script>
+          $('.parallax-bg').parallax({
+            imageSrc: '../images/wrapper/wrapper-blog_detail-page.png'
           });
-          b[l].l = +new Date;
-          e = o.createElement(i);
-          r = o.getElementsByTagName(i)[0];
-          e.src = 'https://www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
-      </script>
-
-      <script src="scripts/vendor.js"></script>
-
-      <script src="scripts/plugins.js"></script>
-
-      <script src="scripts/main.js"></script>
-
-      <script src="scripts/bootstrap-filestyle.js"></script>
-
-      <script src="scripts/imagesloaded.pkgd.js"></script>
-
-      <script src="scripts/isotope.pkgd.js"></script>
-
-      <script src="scripts/lightbox.js"></script>
-      
-      <script>
-        var lightbox = new Lightbox();
-        lightbox.load();
-      </script>
-
-      <script>
-        var toggleBlock = function() {
-          var windowsize = $(window).width(),
-            isDesktop = windowsize > 765;
-          $("#sidebar-menu, #last-post, #archives, #tag").toggleClass("collapse out", !isDesktop);
-        }
-        $(document).ready(toggleBlock);
-        $(window).on("resize.showContent", toggleBlock);
-        toggleBlock();
-      </script>
-      <script>
-        $('.parallax-bg').parallax({
-          imageSrc: '../images/wrapper/wrapper-blog_detail-page.png'
-        });
-      </script>
+        </script>
 
 </body>
 
