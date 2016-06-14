@@ -7254,6 +7254,9 @@ button.close {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 .carousel-control.right {
@@ -7263,6 +7266,9 @@ button.close {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  -webkit-transition: all 0.20s linear;
+-moz-transition: all 0.20s linear;
+transition: all 0.20s linear;
 }
 
 .carousel-control:hover, .carousel-control:focus {
@@ -7733,6 +7739,7 @@ html {
   height: auto;
 }
 
+
 #top-link-block.affix-top {
   position: fixed;
   /* allows it to "slide" up into view */
@@ -7749,6 +7756,12 @@ html {
   /* height of link element */
   left: 80%;
   /* padding from the left side of the window */
+}
+
+#top-link-block.affix img {
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 #top-link-block.affix img:hover {
@@ -7785,7 +7798,7 @@ select {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 3px 20px;
@@ -7857,7 +7870,7 @@ hr {
 }
 
 .view-move {
-  margin-top: 300px;
+  margin-top: 100%;
 }
 
 .bottom-logo {
@@ -7971,6 +7984,8 @@ hr {
 .lastest-post img {
   float: left;
   z-index: 4;
+  height: 212px;
+  object-fit: cover;
 }
 
 .lastest-post .caption {
@@ -7989,6 +8004,7 @@ hr {
   width: 100%;
   z-index: 5;
   position: absolute;
+  overflow: hidden;
 }
 
 .lastest-post .caption-text {
@@ -8003,7 +8019,7 @@ hr {
 
 .lastest-post .caption-text {
   position: relative;
-  top: 50%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -8012,7 +8028,6 @@ hr {
   height: 100%;
   width: 100%;
   text-align: left;
-  margin-top: 30%;
 }
 
 .marketing-campaign .caption-wrapper {
@@ -8270,6 +8285,9 @@ a.right.carousel-control.prev {
 
 .our-service a {
   text-decoration: none;
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 .our-service a h4 {
@@ -8282,6 +8300,9 @@ a.right.carousel-control.prev {
   line-height: 16px;
   margin-top: 30px;
   margin-bottom: 43px;
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 .our-service .active {
@@ -8365,12 +8386,20 @@ a.right.carousel-control.prev {
 }
 
 .wrapper-marketing .caption p {
-  width: 200px;
   font-size: 18px;
+  font-family: SCGReg;
   font-weight: 400;
   line-height: 26px;
-  overflow: hidden;
   color: #fff;
+  display: block;
+  display: -webkit-box;
+  width: 300px;
+  max-width: 100%;
+  height: 50px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .scg-blog_topic {
@@ -8399,6 +8428,9 @@ a.right.carousel-control.prev {
 .caption {
   letter-spacing: 0.6px;
   width: auto;
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 .caption h3 {
@@ -8465,6 +8497,9 @@ a.right.carousel-control.prev {
   background-repeat: no-repeat;
   vertical-align: middle;
   padding-left: 30px;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 .icon-reply {
@@ -8475,6 +8510,9 @@ a.right.carousel-control.prev {
   padding-left: 30px;
   width: 32px;
   height: 32px;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 .icon-like {
@@ -8485,6 +8523,9 @@ a.right.carousel-control.prev {
   padding-left: 30px;
   width: 32px;
   height: 32px;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 .icon-share {
@@ -8495,6 +8536,9 @@ a.right.carousel-control.prev {
   padding-left: 30px;
   width: 32px;
   height: 32px;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 .icon-location {
@@ -8505,6 +8549,18 @@ a.right.carousel-control.prev {
   padding-left: 20px;
   width: auto;
   height: 32px;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.icon-view:hover,
+.icon-reply:hover,
+.icon-like:hover,
+.icon-share:hover,
+.icon-location:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .icon-location a {
@@ -8550,6 +8606,9 @@ a.right.carousel-control.prev {
 .icon-link_social a > img {
   margin-right: 30px;
   min-width: 60px;
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 .icon-link_social a img:hover {
@@ -8558,6 +8617,9 @@ a.right.carousel-control.prev {
   -moz-filter: brightness(0);
   -o-filter: brightness(0);
   -ms-filter: brightness(0);
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 .footer {
@@ -8638,10 +8700,13 @@ a.right.carousel-control.prev {
 .banner-support_link a > img {
   padding-top: 30px;
   padding-bottom: 35px;
+  -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
 }
 
 .banner-support_link a img:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .end-footer {
@@ -8660,7 +8725,7 @@ a.right.carousel-control.prev {
 .btn-default {
   min-width: 100px;
   width: auto;
-  height: 32px;
+  height: auto;
   color: #c2c2c2;
   font-family: SCGbol;
   font-size: 14px;
@@ -8690,6 +8755,15 @@ a.right.carousel-control.prev {
   height: 211px;
   background-color: #e0e0e0;
   position: relative;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.btn-view_all:hover,
+.btn-view_all:focus {
+  background-color: #a1a1a1;
+  cursor: pointer;
 }
 
 .btn-view_all a {
@@ -8855,6 +8929,11 @@ a.right.carousel-control.prev {
   font-family: SCGReg;
   font-size: 16px;
 }
+.sustainable-desciption img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .btn-sustain {
   width: 213px;
@@ -8937,7 +9016,16 @@ a.right.carousel-control.prev {
   font-family: SCGBol;
   font-size: 16px;
   font-weight: 700;
+  display: block;
+  display: -webkit-box;
+  width: 300px;
+  max-width: 100%;
+  height: 50px;
   line-height: 24px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .lastest-post .caption small {
@@ -8951,7 +9039,6 @@ a.right.carousel-control.prev {
 
 .caption-wrapper img {
   width: 100%;
-  height: auto;
 }
 
 .news-post_thumbnail {
@@ -9034,7 +9121,9 @@ a.right.carousel-control.prev {
   font-size: 16px;
   font-weight: 400;
 }
-
+.menu-tab {
+  margin-top: -10px;
+}
 .menu-tab li {
   float: left;
 }
@@ -9262,7 +9351,7 @@ a.right.carousel-control.prev {
 }
 
 .modal-dialog {
-  margin: 60px auto;
+  margin: 150px auto;
 }
 
 .modal-content {
@@ -9316,7 +9405,10 @@ a.right.carousel-control.prev {
 }
 
 .modal-se {
-  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-wrap: break-word;
+  padding: 10px;
 }
 
 .modal-se img {
@@ -9355,12 +9447,35 @@ a.right.carousel-control.prev {
   font-weight: 700;
   max-width: 543px;
 }
-
-.news-thumbnail {
-  padding: 22px 18px;
-  background-color: #e0e0e0;
+.blog-thumbnail img {
+  width: 100%;
+}
+.blog-thumbnail img:hover {
+  opacity: 0.8;
 }
 
+.news-thumbnail {
+  background-color: #e0e0e0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.news-thumbnail_gallery {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.news-thumbnail_gallery img {
+  width: 100%;
+  height: 100px;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}
+.news-thumbnail_gallery img:hover{
+  opacity: 0.8;
+}
 .blog-detail {
   color: black;
   font-family: SCGReg;
@@ -10146,7 +10261,7 @@ a.right.carousel-control.prev {
   input,
   p,
   small {
-    font-size: 95%;
+    font-size: 12px;
   }
   h1 {
     font-size: 24px;
@@ -10158,10 +10273,10 @@ a.right.carousel-control.prev {
     font-size: 18px;
   }
   .nav li > a {
-    font-size: 11px;
+    font-size: 10px;
   }
   .btn-navbar {
-    min-width: 70px;
+    min-width: 80px;
     width: auto;
     height: auto;
     font-size: 8px;
@@ -10181,6 +10296,10 @@ a.right.carousel-control.prev {
   .btn-blog {
     width: 60%;
   }
+  .news-thumbnail_galler img{
+    max-width: 200px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -10190,7 +10309,7 @@ a.right.carousel-control.prev {
   input,
   p,
   small {
-    font-size: 95%;
+    font-size: 12px;
   }
   h1 {
     font-size: 20px;
@@ -10202,7 +10321,7 @@ a.right.carousel-control.prev {
     font-size: 16px;
   }
   .nav li > a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .navbar-brand {
     padding: 15px 0;
@@ -10231,6 +10350,9 @@ a.right.carousel-control.prev {
     max-width: 360px;
     margin: 0;
   }
+  .caption p {
+    font-size: 12px;
+  }
   .wrapper-marketing {
     position: relative;
     height: 210px;
@@ -10253,8 +10375,9 @@ a.right.carousel-control.prev {
     font-size: 10px;
     padding-left: 20px;
   }
+
   .company-description {
-    font-size: 95%;
+    font-size: 12px;
   }
   .blog-thumbnail .caption small {
     font-size: 10px;
@@ -10266,7 +10389,7 @@ a.right.carousel-control.prev {
     font-size: 20px;
   }
   .scg-blog_topic p {
-    font-size: 95%;
+    font-size: 12px;
   }
   .scg-news {
     margin-top: 0;
@@ -10275,10 +10398,7 @@ a.right.carousel-control.prev {
     font-size: 20px;
   }
   .scg-news .scg-news_activities p {
-    font-size: 95%;
-  }
-  .lastest-post .caption-text {
-    margin-top: 40%;
+    font-size: 12px;
   }
   .btn-view_all {
     height: 60px;
@@ -10314,7 +10434,7 @@ a.right.carousel-control.prev {
   }
   .service-desciption li,
   .service-desciption p {
-    font-size: 95%;
+    font-size: 12px;
   }
   .sustainable-bg_top {
     background-size: 100%;
@@ -10335,7 +10455,7 @@ a.right.carousel-control.prev {
   }
   .sustainable-desciption li,
   .sustainable-desciption p {
-    font-size: 95%;
+    font-size: 12px;
   }
   .nav-pills li > a {
     padding: 0;
@@ -10352,15 +10472,14 @@ a.right.carousel-control.prev {
     width: 200px;
     overflow: hidden;
   }
+
   .blog-detail {
-    font-size: 95%;
+    font-size: 12px;
   }
   .btn-blog {
     width: 300px;
   }
-  .blog-thumbnail img {
-    width: 100%;
-  }
+
   .blog-icon_show {
     margin-top: 40px;
   }
