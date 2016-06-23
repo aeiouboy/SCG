@@ -5985,6 +5985,9 @@ a.thumbnail.active {
   margin-top: 0;
   margin-bottom: 5px;
 }
+.news-post_thumbnail h4:hover{
+  color: #369;
+}
 
 .media-list {
   padding-left: 0;
@@ -7785,7 +7788,11 @@ select {
 .parallax-bg {
   background: transparent;
   position: relative;
-  max-height: 100%;
+}
+.parallax-slider {
+  height: auto !important;
+  max-width: 1280px !important;
+  position: relative !important;
 }
 
 .btn-member_menu {
@@ -8100,6 +8107,7 @@ hr {
 
 .nav li > a:active, .nav li > a:active:focus, .nav li > a:active:hover, .nav li > a:focus, .nav li > a:hover {
   background: none;
+  font-weight: bold;
 }
 
 .navbar-top {
@@ -8148,7 +8156,7 @@ hr {
 }
 
 .nav.navbar-right a {
-  color: #c2c2c2;
+  color: #898989;
   text-align: center;
   font-family: SCGBol;
   font-size: 14px;
@@ -8293,7 +8301,7 @@ transition: all 0.25s linear;
 .our-service a h4 {
   text-align: center;
   height: auto;
-  color: #c2c2c2;
+  color: #898989;
   font-family: SCGReg;
   font-size: 16px;
   font-weight: 700;
@@ -8337,7 +8345,7 @@ transition: all 0.25s linear;
   width: 38%;
   height: 1px;
   vertical-align: middle;
-  background-color: #c2c2c2;
+  background-color: #898989;
   left: 0.5em;
   margin: 0 -50% 0 0;
 }
@@ -8348,7 +8356,7 @@ transition: all 0.25s linear;
 }
 
 .our-serivce_line {
-  border-top: 1px solid #c2c2c2;
+  border-top: 1px solid #898989;
   width: 100%;
 }
 
@@ -8442,13 +8450,6 @@ transition: all 0.25s linear;
 
 .caption h3:active, .caption h3:focus, .caption h3:hover {
   color: #369;
-}
-
-.caption h4 {
-  font-size: 16px;
-  color: black;
-  font-weight: 700;
-  font-family: SCGBol;
 }
 
 .caption small {
@@ -8649,6 +8650,7 @@ transition: all 0.25s linear;
 .footer a:focus,
 .footer a:hover {
   font-weight: 700;
+  font-weight: bold;
 }
 
 .footer a:hover strong {
@@ -8726,18 +8728,18 @@ transition: all 0.25s linear;
   min-width: 100px;
   width: auto;
   height: auto;
-  color: #c2c2c2;
+  color: #898989;
   font-family: SCGbol;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  border-color: #c2c2c2;
+  border-color: #898989;
   background-color: transparent;
 }
 
 .btn-default:active, .btn-default:active:focus, .btn-default:active:hover, .btn-default:focus, .btn-default:hover {
   color: #fff;
-  border-color: #c2c2c2;
+  border-color: #898989;
   background-color: #dadada;
   box-shadow: none;
 }
@@ -9055,6 +9057,9 @@ transition: all 0.25s linear;
   line-height: 24px;
   overflow: hidden;
 }
+ .news-post_thumbnail a:hover {
+  text-decoration: none;
+}
 
 .news-post_thumbnail small {
   font-weight: 400;
@@ -9304,6 +9309,11 @@ transition: all 0.25s linear;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.sheet-download a:hover  {
+  color: #000;
+  font-weight: bold;
+  opacity: 0.8;
+}
 
 .marketing-pagination {
   opacity: 0.6;
@@ -9321,7 +9331,7 @@ transition: all 0.25s linear;
 .pagination > li > a,
 .pagination > li > span {
   background-color: #fff;
-  color: #c2c2c2;
+  color: #898989;
   border: none;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -9333,7 +9343,7 @@ transition: all 0.25s linear;
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-  background-color: #c2c2c2;
+  background-color: #898989;
   color: #fff;
 }
 
@@ -9488,6 +9498,7 @@ transition: all 0.25s linear;
 
 .documents-file {
   padding-top: 20px;
+  width: 200px;
 }
 
 .documents-file a {
@@ -9498,8 +9509,11 @@ transition: all 0.25s linear;
   font-weight: 400;
 }
 
-.documents-file a li:hover {
+.documents-file a li:hover,
+.documents-file a li:focus {
   opacity: 0.8;
+  color: #000;
+  font-weight: bold;
 }
 
 .icon-pdf {
@@ -9600,6 +9614,15 @@ transition: all 0.25s linear;
   position: relative;
   padding-right: 15px;
 }
+.media-left img:hover{
+  opacity: 0.9;
+}
+.sidebar-body a {
+  text-decoration: none;
+}
+.sidebar-body h4:hover {
+  color: #369;
+}
 
 .media-object {
   position: relative;
@@ -9625,6 +9648,11 @@ transition: all 0.25s linear;
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 400;
+}
+
+.side-bar .sidebar-module li > a:hover {
+  color: #000;
+  font-weight: bold;
 }
 
 .side-bar .sidebar-module .posts {
@@ -9791,7 +9819,7 @@ transition: all 0.25s linear;
   padding: 10px 12px;
   pointer-events: none;
   font-size: 15px;
-  color: #c2c2c2;
+  color: #898989;
 }
 
 .change-password {
@@ -10466,7 +10494,7 @@ transition: all 0.25s linear;
   .news-bg_top .title-news {
     padding: 0;
   }
-  .news-post_thumbnail h4,
+  ,
   .news-post_thumbnail p,
   .news-post_thumbnail small {
     width: 200px;
