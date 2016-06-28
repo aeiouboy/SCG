@@ -175,7 +175,6 @@
     <!-- Nav Mobile -->
   </section>
   <!--Blog Top -->
-  <!-- <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-blog-page.png" data-natural-width="1300" data-natural-height="1043" data-z-index="-9999" data-position-y="150px" data-position="top"> -->
   <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-blog-page.png" data-natural-width="1300" data-natural-height="1043" data-z-index="-9999" data-position-y="150px" data-position="top">
   <section class="scg-top">
     <div id="carousel-text" class="carousel slide" data-ride="carousel">
@@ -431,6 +430,7 @@
       <a href="#" class="btn btn-default btn-loadmore" id="load">Load More</a>
     </div>
   </section>
+</div>
   <!--Link Social-->
   <section class="link-social">
     <div class="container">
@@ -453,7 +453,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <!--Footer-->
@@ -577,6 +576,14 @@
   <script src="scripts/plugins.js"></script>
 
   <script src="scripts/main.js"></script>
+
+  <script src="scripts/bootstrap-filestyle.js"></script>
+
+  <script src="scripts/imagesloaded.pkgd.js"></script>
+
+  <script src="scripts/isotope.pkgd.js"></script>
+
+  <script src="scripts/lightbox.js"></script>
   <script>
     $(function() {
       $(".scg-blog_post").slice(0, 6).show();
@@ -590,9 +597,7 @@
     });
   </script>
   <script>
-    $('.parallax-bg').parallax({
-      imageSrc: '../images/wrapper/wrapper-blog-page.png'
-    });
+  $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-blog-page.png'});
   </script>
 </body>
 
