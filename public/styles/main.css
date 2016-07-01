@@ -8084,7 +8084,6 @@ hr {
   width: 100%;
   z-index: 5;
   position: absolute;
-  margin-top: 18px;
 }
 
 .marketing-campaign .caption-text h1 {
@@ -8548,6 +8547,10 @@ transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
 
+.icon-like:hover {
+  background-image: url("../images/icon-like_hover.png");
+  color: #F69296;
+}
 .icon-share {
   background-image: url("../images/icon-share.png");
   background-position: left center;
@@ -8560,7 +8563,10 @@ transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-
+.icon-share:hover {
+  background-image: url("../images/icon-share_hover.png");
+  color: #F69296;
+}
 .icon-location {
   background-image: url("../images/icon-location.png");
   background-position: left;
@@ -9002,10 +9008,6 @@ transition: all 0.25s linear;
   margin: 0;
 }
 
-.title-lastest_post {
-  padding-left: 20px;
-}
-
 .title-lastest_post h4 {
   background-color: #d90b0f;
   width: 125px;
@@ -9309,9 +9311,17 @@ transition: all 0.25s linear;
   font-size: 16px;
   font-weight: 400;
 }
-
-.marketing-campaign img {
-  margin-top: 18px;
+.title-tag h4 {
+  background-color: #d90b0f;
+  width: 125px;
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+  font-family: SCGReg;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .sheet-download {
@@ -9368,14 +9378,18 @@ transition: all 0.25s linear;
 .btn-register_marketing {
   width: 212px;
   height: 40px;
-  background-color: #dadada;
-  opacity: 0.6;
-  color: white;
+  background-color: #7caeda;
+  color: #ffffff;
+  opacity: 0.702;
   font-family: SCGBol;
   font-size: 14px;
   padding: 10px 6px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.btn-register_marketing:hover {
+  opacity: 0.9;
 }
 
 .modal-dialog {
