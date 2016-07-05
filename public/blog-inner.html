@@ -188,7 +188,7 @@
     <!-- Nav Mobile -->
   </section>
 
-  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/bg-section1.png" data-natural-width="1300" data-natural-height="1255" data-z-index="-9999" data-position-y="170px" data-position="top">
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/bg-section1.png" data-natural-width="1300" data-natural-height="1255" data-z-index="-9999" data-position-y="160px" data-position="top">
     <!-- blog -->
     <div class="container">
       <div class="row">
@@ -463,7 +463,7 @@
     </div>
   </section>
   <!-- /.blog-sidebar -->
-</div>
+  </div>
   <!--7. Link Social-->
   <section class="link-social">
     <div class="container">
@@ -641,6 +641,11 @@
 
         <script src="scripts/lightbox.js"></script>
         <script>
+          $('.parallax-bg').parallax({
+            imageSrc: '../images/wrapper/wrapper-blog_detail-page.png'
+          });
+        </script>
+        <script>
           var lightbox = new Lightbox();
           lightbox.load();
         </script>
@@ -654,11 +659,6 @@
           $(document).ready(toggleBlock);
           $(window).on("resize.showContent", toggleBlock);
           toggleBlock();
-        </script>
-        <script>
-          $('.parallax-bg').parallax({
-            imageSrc: '../images/wrapper/wrapper-blog_detail-page.png'
-          });
         </script>
 
 </body>
