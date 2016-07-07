@@ -172,7 +172,7 @@
     <!-- Nav Mobile -->
   </section>
   <!--SCG News-->
-  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-news-page.png" data-natural-width="1300" data-z-index="-9999" data-natural-height="723" data-position-y="170px" data-position="top">
+  <div class="parallax-bg" data-parallax="scroll" data-bleed="2" data-speed="0.2" data-image-src="../images/wrapper/wrapper-news-page.png" data-natural-width="1300" data-z-index="-9999" data-natural-height="1078" data-position-y="199px" data-position="top">
   <section class="scg-news">
     <div class="container">
       <div class="news-bg_top">
@@ -188,7 +188,7 @@
   <section class="blog-lastest_post">
     <div class="container">
       <div class="row">
-        <div class="title-lastest_post">
+        <div class="title-lastest_post" style="padding-left: 20px;">
           <h4>Lastest post</h4>
         </div>
       </div>
@@ -613,7 +613,6 @@
       <a href="#" class="btn btn-default btn-loadmore" id="load">Load More</a>
     </div>
   </section>
-</div>
   <!--Link Social-->
   <section class="link-social">
     <div class="container">
@@ -639,6 +638,7 @@
     </div>
     </div>
   </section>
+  </div>
   <!--Footer-->
   <section class="footer">
     <div class="container">
@@ -769,6 +769,9 @@
 
   <script src="scripts/lightbox.js"></script>
   <script>
+  $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-news-page.png'});
+  </script>
+  <script>
     $(function() {
       $(".news-post_thumbnail").slice(0, 8).show();
       $("#load").on('click', function(e) {
@@ -779,9 +782,6 @@
         }
       });
     });
-  </script>
-  <script>
-  $('.parallax-bg').parallax({imageSrc: '../images/wrapper/wrapper-news-page.png'});
   </script>
 </body>
 

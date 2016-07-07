@@ -6,9 +6,11 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: SCGReg,sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+  color: black;
 }
 
 body {
@@ -7804,13 +7806,9 @@ select {
 
 .parallax-bg {
   background: transparent;
-  position: relative;
+  width: 100%;
 }
-.parallax-slider {
-  height: auto !important;
-  max-width: 100% !important;
-  position: relative !important;
-}
+
 
 .btn-member_menu {
   background-color: #ebebeb;
@@ -7891,10 +7889,6 @@ hr {
 .no-gutter {
   padding: 0;
   margin: 0;
-}
-
-.view-move {
-  margin-top: 100%;
 }
 
 .bottom-logo {
@@ -8464,6 +8458,7 @@ transition: all 0.25s linear;
   font-family: SCGBol;
   font-size: 16px;
   font-weight: 700;
+  line-height: 20px;
 }
 
 .caption h3:active, .caption h3:focus, .caption h3:hover {
@@ -8843,7 +8838,7 @@ transition: all 0.25s linear;
 }
 
 .btn-company {
-  width: 212px;
+  min-width: 180px;
   margin-bottom: 10px;
 }
 
@@ -9148,9 +9143,6 @@ transition: all 0.25s linear;
 }
 .menu-tab {
   margin-top: -10px;
-}
-.menu-tab li {
-  float: left;
 }
 
 .btn-contact {
@@ -9488,6 +9480,9 @@ transition: all 0.25s linear;
   font-size: 26px;
   font-weight: 700;
   max-width: 543px;
+}
+.news-title h3 {
+  line-height: 40px;
 }
 .blog-thumbnail img {
   width: 100%;
@@ -10315,6 +10310,9 @@ transition: all 0.25s linear;
 }
 
 @media screen and (max-width: 992px) {
+  .parallax-slider {
+    min-width: 400px !important;
+  }
   .btn,
   div,
   h4,
@@ -10344,6 +10342,10 @@ transition: all 0.25s linear;
   .list-btn_member {
     margin-top: 10px;
   }
+  .menu-tab li {
+    float: none;
+    display: list-item;
+  }
   .bottom-logo {
     position: absolute;
     top: -215px;
@@ -10363,6 +10365,9 @@ transition: all 0.25s linear;
 }
 
 @media (max-width: 768px) {
+  .parallax-slider {
+    min-width: 200px !important;
+  }
   .btn,
   div,
   h4,
@@ -10480,8 +10485,16 @@ transition: all 0.25s linear;
   .company-bg_top {
     background-size: 100%;
   }
-  .btn-comnpany {
-    width: 300px;
+  .menu-tab {
+    margin-top: 10px;
+    display: block;
+  }
+  .menu-tab li {
+    float: none;
+    display: list-item;
+  }
+  .btn-company {
+    min-width: 180px;
   }
   .company-bg_top .title-company {
     padding: 0;
@@ -10526,7 +10539,7 @@ transition: all 0.25s linear;
   .news-bg_top .title-news {
     padding: 0;
   }
-  ,
+  .news-post_thumbnail h4,
   .news-post_thumbnail p,
   .news-post_thumbnail small {
     width: 200px;
@@ -10634,9 +10647,6 @@ transition: all 0.25s linear;
   }
   .title-contact {
     padding: 0;
-  }
-  .parallax-window1 {
-    padding: 20px;
   }
 }
 
