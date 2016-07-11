@@ -1501,6 +1501,7 @@ h6 .small,
   font-weight: normal;
   line-height: 1;
   color: #777777;
+
 }
 
 h1, .h1,
@@ -1584,7 +1585,7 @@ p {
 
 small,
 .small {
-  font-size: 85%;
+  font-size: 80%;
 }
 
 mark,
@@ -1956,6 +1957,26 @@ pre code {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+}
+
+.blog-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.blog-container:before, .blog-container:after {
+  content: " ";
+  display: table;
+}
+.blog-container:after {
+  clear: both;
+}
+
+@media (min-width: 992px) {
+  .blog-container {
+    width: 1100px;
   }
 }
 
@@ -8680,7 +8701,7 @@ transition: all 0.25s linear;
   margin-bottom: 38px;
   margin-top: 38px;
   background-color: #fff;
-  padding: 40px;
+  padding: 30px;
 }
 
 .form-subscribe input {
@@ -9237,7 +9258,7 @@ transition: all 0.25s linear;
   vertical-align: middle;
   width: 300px;
   color: #acacac;
-  font-size: 18px;
+  font-size: 14px;
   font-family: SCGReg;
 }
 
@@ -9639,7 +9660,7 @@ transition: all 0.25s linear;
   height: 100px;
   margin: 0 10px 0 0 !important;
   position: relative;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 .media-left img:hover{
   opacity: 0.9;
@@ -9655,7 +9676,7 @@ transition: all 0.25s linear;
   position: relative;
   padding-right: 0 !important;
   height: 100%;
-  width: 131px;
+  width: 110px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -9687,13 +9708,14 @@ transition: all 0.25s linear;
 }
 
 .sidebar-body .media-heading {
-  width: 125px;
+  width: 110px;
   height: 39px;
   color: black;
   font-family: SCGBol;
   font-weight: 700;
   line-height: 20px;
   overflow: hidden;
+  font-size: 10px;
 }
 
 .widget-tag {
@@ -10310,9 +10332,6 @@ transition: all 0.25s linear;
 }
 
 @media screen and (max-width: 992px) {
-  .parallax-slider {
-    min-width: 400px !important;
-  }
   .btn,
   div,
   h4,
@@ -10362,12 +10381,12 @@ transition: all 0.25s linear;
     max-width: 200px;
     height: 200px;
   }
+  .btn-contact {
+    min-width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
-  .parallax-slider {
-    min-width: 200px !important;
-  }
   .btn,
   div,
   h4,
