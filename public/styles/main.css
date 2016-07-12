@@ -9884,7 +9884,7 @@ transition: all 0.25s linear;
 
 .change-password_bg .title-change-password {
   padding-top: 58px;
-  padding-left: 80px;
+  padding-left: 140px;
   letter-spacing: 0.6px;
   font-family: SCGReg;
   color: black;
@@ -10033,7 +10033,7 @@ transition: all 0.25s linear;
 
 .login-bg .title-login {
   padding-top: 58px;
-  padding-left: 80px;
+  padding-left: 140px;
   letter-spacing: 0.6px;
   font-family: SCGReg;
   color: black;
