@@ -11,6 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   font-weight: 400;
   color: black;
+  font-size: 14px;
 }
 
 body {
@@ -4157,7 +4158,7 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #333333;
+  color: #333;
   white-space: nowrap;
 }
 
@@ -7834,7 +7835,7 @@ select {
 .btn-member_menu {
   background-color: #ebebeb;
   border-radius: 3px;
-  opacity: 0.4;
+  opacity: 0.5;
   border: 1px solid #ebebeb;
   color: black;
   font-family: SCGBol;
@@ -7864,13 +7865,13 @@ select {
   font-size: 14px;
   background-color: #ebebeb;
   border-radius: 3px;
-  opacity: 0.4;
+  opacity: 0.5;
   border: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
-  color: #898989;
+  color: #333;
   font-family: SCGReg;
   font-size: 14px;
   font-weight: 400;
@@ -7882,6 +7883,11 @@ select {
 
 .dropdown-menu.member-menu li > a {
   padding: 3px 10px;
+}
+
+.dropdown-menu.member-menu li > a:hover {
+  color: #000;
+  font-weight: bold;
 }
 
 .member-navbar {
@@ -7905,6 +7911,7 @@ select {
 
 hr {
   border-top: 1px solid #e0e0e0;
+  margin-bottom: 10px;
 }
 
 .no-gutter {
@@ -8396,7 +8403,9 @@ transition: all 0.25s linear;
 .scg-marketing {
   margin-top: 30px;
 }
-
+.wrapper-marketing:hover{
+  opacity: 0.8;
+}
 .wrapper-marketing .caption {
   position: absolute;
   bottom: 0;
@@ -8480,6 +8489,7 @@ transition: all 0.25s linear;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  margin-top: 10px;
 }
 
 .caption h3:active, .caption h3:focus, .caption h3:hover {
@@ -8701,7 +8711,7 @@ transition: all 0.25s linear;
   margin-bottom: 38px;
   margin-top: 38px;
   background-color: #fff;
-  padding: 30px;
+  padding: 5px 15px 15px 15px;
 }
 
 .form-subscribe input {
@@ -10447,6 +10457,9 @@ transition: all 0.25s linear;
   .wrapper-marketing img {
     width: 100%;
     height: auto;
+  }
+  .wrapper-marketing img:hover {
+    opacity: 0.8;
   }
   .wrapper-marketing .caption {
     padding-top: 20px;
