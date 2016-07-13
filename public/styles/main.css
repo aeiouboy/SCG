@@ -9233,7 +9233,7 @@ transition: all 0.25s linear;
 
 .blog-post p {
   color: black;
-  font-family: SCGReg, sans-serif;
+  font-family: SCGReg;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -9567,7 +9567,7 @@ transition: all 0.25s linear;
 .blog-detail {
   color: black;
   font-family: SCGReg;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: justify;
   font-weight: 400;
