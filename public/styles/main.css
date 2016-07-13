@@ -1752,7 +1752,6 @@ ol ol {
 .list-inline {
   padding-left: 0;
   list-style: none;
-  margin-left: -5px;
 }
 
 .list-inline > li {
@@ -8523,17 +8522,15 @@ transition: all 0.25s linear;
   text-decoration: none;
 }
 
-.blog-icon_group {
-  padding-left: 10px;
-}
 
 .blog-icon_group li {
   color: #acacac;
   font-family: SCGReg;
   font-size: 14px;
   font-weight: 400;
-  display: inline-block;
+  display: inline;
   padding: 0;
+  width: 100%;
 }
 
 .icon-view {
@@ -9236,8 +9233,8 @@ transition: all 0.25s linear;
 
 .blog-post p {
   color: black;
-  font-family: SCGReg;
-  font-size: 18px;
+  font-family: SCGReg, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   text-align: justify;
@@ -9515,8 +9512,31 @@ transition: all 0.25s linear;
 .news-title h3 {
   line-height: 40px;
 }
+.thumbnail{
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    -webkit-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+ .thumbnail a > img {
+  height: 211px;
+  width: 100%;
+  object-fit: cover;
+}
+ .thumbnail a > img:hover {
+    opacity: 0.8;
+ }
+.thumbnail .caption {
+  padding: 0;
+}
 .blog-thumbnail img {
   width: 100%;
+  object-fit: cover;
 }
 .blog-thumbnail img:hover {
   opacity: 0.8;
@@ -10387,6 +10407,9 @@ transition: all 0.25s linear;
   .btn-blog {
     width: 60%;
   }
+  .thumbnail > a img {
+    height: 250px;
+  }
   .news-thumbnail_galler img{
     max-width: 200px;
     height: 200px;
@@ -10395,7 +10418,11 @@ transition: all 0.25s linear;
     min-width: 200px;
   }
 }
-
+@media (min-width: 768px) {
+  .thumbnail > a img {
+    height: 250px;
+  }
+ }
 @media (max-width: 768px) {
   .btn,
   div,
@@ -10475,6 +10502,9 @@ transition: all 0.25s linear;
 
   .company-description {
     font-size: 12px;
+  }
+  .thumbnail > a img {
+    height: 115px;
   }
   .blog-thumbnail .caption small {
     font-size: 10px;
