@@ -10029,7 +10029,7 @@ transition: all 0.25s linear;
   text-transform: uppercase;
   padding: 5px;
   border: none;
-  width: 110px;
+  width: auto;
 }
 
 .borderless tbody > tr > td,
@@ -10420,7 +10420,13 @@ transition: all 0.25s linear;
 }
 @media (min-width: 768px) {
   .thumbnail > a img {
-    height: 250px;
+    height: 157px;
+  }
+ }
+
+@media (min-width: 992px) {
+  .thumbnail > a img {
+    height: 211px;
   }
  }
 @media (max-width: 768px) {
@@ -10496,7 +10502,7 @@ transition: all 0.25s linear;
   .icon-share,
   .icon-view {
     background-size: 15px;
-    font-size: 10px;
+    font-size: 8px;
     padding-left: 20px;
   }
 
@@ -10504,10 +10510,13 @@ transition: all 0.25s linear;
     font-size: 12px;
   }
   .thumbnail > a img {
-    height: 115px;
+    height: 116px;
   }
   .blog-thumbnail .caption small {
-    font-size: 10px;
+    font-size: 8px;
+  }
+  .caption small {
+    font-size: 8px;
   }
   .scg-blog_topic {
     margin-top: 0;
