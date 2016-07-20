@@ -9345,7 +9345,8 @@ transition: all 0.25s linear;
 }
 .title-tag h4 {
   background-color: #d90b0f;
-  width: 125px;
+  width: auto;
+  min-width: 40px;
   padding: 5px;
   color: #fff;
   text-align: center;
@@ -10412,6 +10413,9 @@ transition: all 0.25s linear;
     top: -215px;
     right: -70px;
     z-index: -1;
+  }
+  .marketing-campaign small {
+    font-size: 10px;
   }
   .blog-menu li {
     display: block;
