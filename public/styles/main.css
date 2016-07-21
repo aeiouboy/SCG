@@ -7769,6 +7769,10 @@ html {
   overflow-x: hidden;
 }
 
+a {
+    word-break: break-word;
+}
+
 /* clearfix */
 .grid:after {
   content: '';
@@ -8967,6 +8971,7 @@ transition: all 0.25s linear;
   letter-spacing: 0.6px;
   text-align: justify;
   padding-top: 38px;
+  word-break: break-word;
 }
 
 .sustainable-desciption h5 {
@@ -9279,6 +9284,7 @@ transition: all 0.25s linear;
 
 .blog-date_view > ul li {
   display: inline;
+  padding: 0;
 }
 
 .widget-bottom {
