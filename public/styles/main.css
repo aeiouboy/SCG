@@ -7770,7 +7770,8 @@ html {
 }
 
 a {
-    word-break: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 /* clearfix */
