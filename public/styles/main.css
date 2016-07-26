@@ -9288,6 +9288,10 @@ transition: all 0.25s linear;
   padding: 0;
 }
 
+.blog-reply_view > ul li {
+  display: inline-table;
+}
+
 .widget-bottom {
   margin-top: 32px;
 }
