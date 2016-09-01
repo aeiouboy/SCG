@@ -7923,16 +7923,17 @@ hr {
 }
 
 .bottom-logo {
+  content: "";
+  background-image: url(../images/scg-cycle.png);
+  background-repeat: no-repeat;
+  background-position: left top;
   position: absolute;
-  top: -215px;
-  right: -250px;
-  z-index: -1;
-}
+  top: 4125px;
+  left: 60%;
+  width: 306px;
+  height: 312px;
+  z-index: -100;
 
-.bottom-logo img {
-  height: auto;
-  widows: auto;
-  margin-right: 20px;
 }
 
 .news-post_thumbnail {
@@ -8661,6 +8662,7 @@ transition: all 0.25s linear;
 
 .icon-link_social a > img {
   margin-right: 30px;
+  margin-left: 30px;
   min-width: 60px;
   -webkit-transition: all 0.25s linear;
 -moz-transition: all 0.25s linear;
