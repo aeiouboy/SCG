@@ -7923,12 +7923,11 @@ hr {
 }
 
 .bottom-logo {
-  content: "";
   background-image: url(../images/scg-cycle.png);
   background-repeat: no-repeat;
   background-position: left top;
   position: absolute;
-  top: 4125px;
+  top: -200px;
   left: 60%;
   width: 306px;
   height: 312px;
@@ -8654,6 +8653,9 @@ transition: all 0.25s linear;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+}
+.link-social {
+  position: relative;
 }
 
 .icon-link_social {
@@ -10410,12 +10412,6 @@ transition: all 0.25s linear;
   .menu-tab li {
     float: none;
     display: list-item;
-  }
-  .bottom-logo {
-    position: absolute;
-    top: -215px;
-    right: -70px;
-    z-index: -1;
   }
   .marketing-campaign small {
     font-size: 10px;
