@@ -24,11 +24,6 @@ body {
   z-index: 9999;
   width: 70px;
 }
-@media only all and (min-width: 768px) {
-  .black-ribbon {
-    width: auto;
-  }
-}
 
 .stick-left { left: 0; }
 .stick-right { right: 0; }
@@ -10760,6 +10755,12 @@ transition: all 0.25s linear;
   }
   .title-contact {
     padding: 0;
+  }
+}
+
+@media only all and (min-width: 768px) {
+  .black-ribbon {
+    width: auto;
   }
 }
 
