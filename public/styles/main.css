@@ -10753,6 +10753,7 @@ transition: all 0.25s linear;
 @media only all and (min-width: 768px) {
   .black-ribbon {
     width: auto;
+    max-width: 180px;
   }
 }
 
